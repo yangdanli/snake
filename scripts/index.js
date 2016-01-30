@@ -1,10 +1,9 @@
 window.onload  = function(){
-  var zhezhao=document.getElementsByClassName("zhezhao");
+   var zhezhao=document.getElementsByClassName("zhezhao");
   var zhes=document.getElementById("zhe-s");
   zhes.onclick=function(){
     zhezhao[0].style.display = "none"; 
   }
-  var body=document.getElementById("body");
   var
   snake = [ {x:0,y:0}, {x:0,y:1}, {x:0,y:2} ],
   MAXSNAKE = 100,RIGHT = 39,LEFT = 37,UP = 38, DOWN = 40,
@@ -47,9 +46,6 @@ window.onload  = function(){
     if( dir== DOWN  ){newHead = {x:snake[last].x+1, y:snake[last].y};}
     if( dir== UP    ){newHead = {x:snake[last].x-1, y:snake[last].y};}
     if( newHead.x >9 || newHead.x <0 || newHead.y>9 || newHead.y <0){
-     
-      
-
       alert('game over!'); return null;
     }
     if( isInSnake(newHead.x,newHead.y) ){
