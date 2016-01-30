@@ -1,0 +1,40 @@
+body{
+    background: url('../images/2.jpg');
+}
+.sence{
+    box-shadow:0 0 10px black inset;
+    width:600px;
+    height:600px;
+    border:1px solid black;
+    border-right:none;
+    border-bottom:none;
+    background-color:#010F1A;
+    margin:0 auto;
+}
+.block{
+    background-color:#004B71;
+    width:59px;
+    height:59px;
+    border-radius: 5px;
+    margin:0 1px 1px 0;
+    float:left;
+}
+.zhezhao{
+    position:fixed;top:0;left:0;
+    width:100%;height:700px;background: rgba(0,0,0,.7);
+}
+.zhezhao span{
+    display: block;width:100px;height:50px;position: fixed;top:0;left:0;right: 0;bottom: 0;margin:auto;
+    color:#00ff00;border:1px solid white;line-height: 50px;text-align: center;
+    animation:bounce 1s infinite;cursor: pointer;
+}
+@-webkit-keyframes bounce{
+    0%,20%,53%,80%{-webkit-transform:translateY(0px);}
+    40%,43%{-webkit-transform:translateY(-30px);}
+    70%{-webkit-transform:translateY(-15px);}
+    90%{-webkit-transform:translateY(-4px);}
+}
+.over{
+    position:fixed;top:0;left:0;
+    width:100%;height:700px;background: rgba(0,0,0,.7);
+}
